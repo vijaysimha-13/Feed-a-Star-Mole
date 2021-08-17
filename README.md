@@ -1,1 +1,2 @@
 # Feed-a-Star-Mole
+This game is a fun variant on the game Whack-A-Mole. Game is designed in such a way that little moles will pop out of holes and the game is to tap them before they go back in their holes. In this game variant, they're hungry little star moles and we're going to feed them worms! There are also more-rare royal star moles that are worth double points. If the user doesn't click on a mole in time, the mole frowns and heads back in its hole. If you manage to feed it in time, it smiles happily and disappers back into its hole.
