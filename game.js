@@ -22,69 +22,19 @@ score = document.querySelector('.score');
 
 wormContainer = document.querySelector('.worm-container');
 
-const moles = [
-    {
-      status: "sad",
-      next: getSadInterval(),
-      king: true,
-      node: document.getElementById("hole-0")
-    },
-    {
-      status: "sad",
-      next: getSadInterval(),
-      king: true,
-      node: document.getElementById("hole-1")
-    },
-    {
-      status: "sad",
-      next: getSadInterval(),
-      king: true,
-      node: document.getElementById("hole-2")
-    },
-    {
-      status: "sad",
-      next: getSadInterval(),
-      king: true,
-      node: document.getElementById("hole-3")
-    },
-    {
-      status: "sad",
-      next: getSadInterval(),
-      king: true,
-      node: document.getElementById("hole-4")
-    },
-    {
-      status: "sad",
-      next: getSadInterval(),
-      king: true,
-      node: document.getElementById("hole-5")
-    },
-    {
-      status: "sad",
-      next: getSadInterval(),
-      king: true,
-      node: document.getElementById("hole-6")
-    },
-    {
-      status: "sad",
-      next: getSadInterval(),
-      king: true,
-      node: document.getElementById("hole-7")
-    },
-    {
-      status: "sad",
-      next: getSadInterval(),
-      king: true,
-      node: document.getElementById("hole-8")
-    },
-    {
-      status: "sad",
-      next: getSadInterval(),
-      king: true,
-      node: document.getElementById("hole-9")
-    }
-  ];
+function moleNumber(num) {
+  return {
+    status: "sad",
+    next: getSadInterval(),
+    king: true,
+    node: document.getElementById(`hole-${num}`)
+  };
+}
 
+const moles = [];
+for (let i = 0; i < 10; i++) {
+  moles[i] = moleNumber(i);
+}
 
 function statusUpdate(mole) {
     switch(mole.status) {
